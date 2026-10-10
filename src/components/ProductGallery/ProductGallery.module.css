@@ -1,0 +1,83 @@
+.galleryWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  width: 100%;
+}
+
+.mainImageContainer {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3.2;
+  border-radius: var(--radius-image);
+  overflow: hidden;
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border-subtle);
+  box-shadow: var(--shadow-card);
+}
+
+.mainImage {
+  object-fit: cover;
+  transition: opacity var(--duration-normal) var(--ease-out-smooth),
+              transform var(--duration-image) var(--ease-out-smooth);
+}
+
+.mainImageContainer:hover .mainImage {
+  transform: scale(1.02);
+}
+
+.badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+}
+
+/* THUMBNAIL ROW */
+.thumbnailRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.thumbnailButton {
+  position: relative;
+  width: 84px;
+  height: 64px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 2px solid transparent;
+  background-color: var(--color-bg-secondary);
+  cursor: pointer;
+  padding: 0;
+  transition: all var(--duration-fast) var(--ease-out-smooth);
+  flex-shrink: 0;
+}
+
+.thumbnailButton:hover {
+  border-color: var(--color-border-medium);
+  transform: translateY(-1px);
+}
+
+.thumbnailButtonActive {
+  border-color: var(--color-green-primary);
+  box-shadow: 0 0 0 2px var(--color-green-subtle);
+}
+
+.thumbnailImage {
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .mainImageContainer {
+    aspect-ratio: 4 / 3;
+    border-radius: var(--radius-card);
+  }
+
+  .thumbnailButton {
+    width: 72px;
+    height: 54px;
+  }
+}

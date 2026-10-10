@@ -1,0 +1,340 @@
+/* ==========================================================================
+   CONTACT PAGE STYLES — YOGESH PLASTICS (PHASE 05)
+   Simple + Calm + Premium + Human + Direct
+   ========================================================================== */
+
+.heroSection {
+  padding-top: var(--space-2xl);
+  padding-bottom: var(--space-5xl);
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.95fr;
+  gap: var(--space-3xl);
+  align-items: center;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.heroEyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 12px;
+  background-color: var(--color-green-subtle);
+  color: var(--color-green-primary);
+  border-radius: var(--radius-pill);
+  font-size: var(--text-label);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  margin-bottom: var(--space-lg);
+  border: 1px solid rgba(31, 107, 69, 0.12);
+  user-select: none;
+}
+
+.heroTitle {
+  font-size: var(--text-h1);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tighter);
+  color: var(--color-dark);
+  font-weight: var(--weight-semibold);
+  margin-bottom: var(--space-lg);
+  max-width: 720px;
+}
+
+.heroSubtitle {
+  font-size: var(--text-body-lg);
+  color: var(--color-dark-subtle);
+  line-height: var(--leading-relaxed);
+  max-width: 580px;
+  margin: 0;
+}
+
+.heroVisualContainer {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3.2;
+  border-radius: var(--radius-hero);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--color-border-subtle);
+  background-color: var(--color-bg-secondary);
+}
+
+.heroImage {
+  object-fit: cover;
+}
+
+/* --------------------------------------------------------------------------
+   MAIN INTERACTION SECTION (FORM + DIRECT CONTACT DETAILS)
+   -------------------------------------------------------------------------- */
+.mainSection {
+  padding-top: var(--space-4xl);
+  padding-bottom: var(--space-4xl);
+}
+
+.interactionGrid {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: var(--space-3xl);
+  align-items: start;
+}
+
+.formCard {
+  background: #FFFFFF;
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-card);
+  padding: 44px 40px;
+  box-shadow: var(--shadow-card);
+}
+
+.formHeader {
+  margin-bottom: var(--space-2xl);
+}
+
+.formTitle {
+  font-size: 1.5rem;
+  font-weight: var(--weight-semibold);
+  color: var(--color-dark);
+  margin-bottom: 8px;
+}
+
+.formSubtitle {
+  font-size: var(--text-body-sm);
+  color: var(--color-dark-subtle);
+  line-height: var(--leading-relaxed);
+  margin: 0;
+}
+
+/* SIDEBAR: CONTACT INFO & WHATSAPP CTA */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.infoCard {
+  background: var(--color-glass-bg);
+  backdrop-filter: var(--glass-blur-md);
+  -webkit-backdrop-filter: var(--glass-blur-md);
+  border: 1px solid var(--color-glass-border);
+  border-radius: var(--radius-card);
+  padding: 36px 32px;
+  box-shadow: var(--shadow-card);
+}
+
+.infoTitle {
+  font-size: 1.15rem;
+  font-weight: var(--weight-semibold);
+  color: var(--color-dark);
+  margin-bottom: var(--space-xl);
+}
+
+.infoList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.infoItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.infoIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-pill);
+  background-color: var(--color-green-subtle);
+  color: var(--color-green-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.infoLabel {
+  font-size: var(--text-label);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--color-dark-subtle);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.placeholderPill {
+  display: inline-block;
+  font-family: var(--font-family-mono);
+  font-size: 0.875rem;
+  color: var(--color-dark);
+  background: rgba(17, 22, 19, 0.05);
+  padding: 3px 10px;
+  border-radius: 4px;
+  border: 1px dashed var(--color-border-medium);
+}
+
+.contactLinkValue {
+  display: inline-block;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-dark);
+  text-decoration: none;
+  transition: color var(--duration-fast);
+}
+
+.contactLinkValue:hover {
+  color: var(--color-green-primary);
+  text-decoration: underline;
+}
+
+.whatsappCard {
+  padding: 28px 32px;
+  border-radius: var(--radius-card);
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border-subtle);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.whatsappHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-dark);
+  font-weight: var(--weight-semibold);
+  font-size: 1.05rem;
+}
+
+.whatsappNotice {
+  font-size: var(--text-body-sm);
+  color: var(--color-dark-subtle);
+  line-height: var(--leading-normal);
+  margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   SUPPORTING GUIDANCE SECTION (WHAT TO INCLUDE)
+   -------------------------------------------------------------------------- */
+.guidanceSection {
+  padding-top: var(--space-5xl);
+  padding-bottom: var(--space-5xl);
+  border-top: 1px solid var(--color-border-subtle);
+  background-color: var(--color-bg-secondary);
+}
+
+.guidanceHeader {
+  max-width: 680px;
+  margin-bottom: var(--space-3xl);
+}
+
+.guidanceTitle {
+  font-size: var(--text-h2);
+  line-height: var(--leading-tight);
+  color: var(--color-dark);
+  font-weight: var(--weight-semibold);
+  margin-bottom: 12px;
+}
+
+.guidanceSubtitle {
+  font-size: var(--text-body-lg);
+  color: var(--color-dark-subtle);
+  line-height: var(--leading-relaxed);
+  margin: 0;
+}
+
+.guidanceList {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-xl);
+}
+
+.guidanceItem {
+  background: #FFFFFF;
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-card);
+  padding: 32px 28px;
+  box-shadow: var(--shadow-subtle);
+  display: flex;
+  flex-direction: column;
+  transition: all var(--duration-normal) var(--ease-out-smooth);
+}
+
+.guidanceItem:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card);
+  border-color: rgba(17, 22, 19, 0.12);
+}
+
+.guidanceNumber {
+  font-size: 1.5rem;
+  font-weight: var(--weight-bold);
+  font-family: var(--font-family-sans);
+  color: var(--color-green-primary);
+  margin-bottom: 12px;
+  line-height: 1;
+}
+
+.guidanceItemTitle {
+  font-size: 1.15rem;
+  font-weight: var(--weight-semibold);
+  color: var(--color-dark);
+  margin-bottom: 8px;
+}
+
+.guidanceItemDesc {
+  font-size: var(--text-body-sm);
+  color: var(--color-dark-subtle);
+  line-height: var(--leading-normal);
+  margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   RESPONSIVE OVERRIDES
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  .heroGrid {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .heroVisualContainer {
+    aspect-ratio: 16 / 10;
+  }
+
+  .interactionGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .guidanceList {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .heroTitle {
+    font-size: clamp(2.5rem, 8vw, 3.25rem);
+  }
+
+  .formCard {
+    padding: 28px 20px;
+  }
+
+  .infoCard {
+    padding: 28px 20px;
+  }
+
+  .guidanceList {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+}

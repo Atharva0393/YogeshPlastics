@@ -1,0 +1,43 @@
+.card {
+  position: relative;
+  background: var(--color-glass-bg);
+  backdrop-filter: var(--glass-blur-md);
+  -webkit-backdrop-filter: var(--glass-blur-md);
+  border: 1px solid var(--color-glass-border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  transition: var(--transition-smooth);
+  overflow: hidden;
+}
+
+.card:hover {
+  background: var(--color-glass-bg-hover);
+  border-color: rgba(255, 255, 255, 0.7);
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-2px);
+}
+
+.paddingNone {
+  padding: 0;
+}
+
+.paddingSm {
+  padding: var(--space-md);
+}
+
+.paddingMd {
+  padding: var(--space-xl);
+}
+
+.paddingLg {
+  padding: var(--space-2xl);
+}
+
+@media (max-width: 767px) {
+  .paddingMd {
+    padding: var(--space-lg);
+  }
+  .paddingLg {
+    padding: var(--space-xl);
+  }
+}

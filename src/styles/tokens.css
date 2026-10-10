@@ -1,0 +1,148 @@
+/* ==========================================================================
+   YOGESH PLASTICS DESIGN SYSTEM — CORE DESIGN TOKENS
+   Minimal + Premium + Clean + Calm + Modern + Product-focused
+   ========================================================================== */
+
+:root {
+  /* ========================================================================
+     1. COLOR SYSTEM (predominantly light, natural warm white, dark typography, green accents)
+     ======================================================================== */
+  /* Backgrounds */
+  --color-bg-primary: #F8F9F6;      /* Natural warm white */
+  --color-bg-secondary: #F1F4EF;    /* Subtle tinted surface */
+  --color-bg-tertiary: #E6ECE2;     /* Card background / muted container */
+  --color-bg-surface: #FFFFFF;      /* Pure white for layered cards */
+
+  /* Dark & Typography Colors */
+  --color-dark: #111613;            /* Primary dark typography */
+  --color-dark-muted: #344038;      /* Secondary dark text */
+  --color-dark-subtle: #627268;     /* Subtle/muted body & captions */
+  --color-dark-faint: #98A59E;      /* Very light muted notes */
+
+  /* Brand Greens (5–10% accents) */
+  --color-green-primary: #1F6B45;   /* Primary brand green */
+  --color-green-secondary: #3F8A62; /* Interactive / secondary green */
+  --color-green-muted: #7FA58E;     /* Muted sage green */
+  --color-green-subtle: #EBF3EE;    /* Soft tinted pill / badge bg */
+  --color-green-deep: #14472E;      /* Active / hover dark green */
+
+  /* Glassmorphism System */
+  --color-glass-bg: rgba(255, 255, 255, 0.68);
+  --color-glass-bg-hover: rgba(255, 255, 255, 0.82);
+  --color-glass-border: rgba(255, 255, 255, 0.45);
+  --color-glass-border-subtle: rgba(17, 22, 19, 0.08);
+  --glass-blur-sm: blur(12px);
+  --glass-blur-md: blur(20px);
+  --glass-blur-lg: blur(32px);
+
+  /* Subtle Borders */
+  --color-border-subtle: rgba(17, 22, 19, 0.08);
+  --color-border-medium: rgba(17, 22, 19, 0.14);
+  --color-border-strong: rgba(17, 22, 19, 0.24);
+
+  /* ========================================================================
+     2. BORDER RADIUS SYSTEM (Consistent Apple-style hierarchy)
+     ======================================================================== */
+  --radius-xs: 6px;
+  --radius-sm: 12px;        /* Small elements, badges, thumbnails */
+  --radius-md: 16px;        /* Medium containers, inputs */
+  --radius-lg: 24px;        /* Large cards, sections */
+  --radius-card: 26px;      /* Hero & Product cards (24–28px) */
+  --radius-hero: 36px;      /* Hero & major banner containers (~36px) */
+  --radius-image: 36px;     /* Large image containers (32–40px) */
+  --radius-pill: 9999px;    /* Buttons & status pills */
+  --radius-circle: 50%;
+
+  /* ========================================================================
+     3. TYPOGRAPHY SYSTEM (Modern sans-serif editorial scale)
+     ======================================================================== */
+  --font-family-sans: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-family-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Font Sizes */
+  --text-h1: clamp(3rem, 5.5vw + 0.8rem, 4.85rem);    /* 48px – 78px */
+  --text-h2: clamp(2.15rem, 3.8vw + 0.4rem, 3.5rem);   /* 34px – 56px */
+  --text-h3: clamp(1.45rem, 1.8vw + 0.4rem, 1.95rem);  /* 23px – 31px */
+  --text-h4: clamp(1.15rem, 1.1vw + 0.2rem, 1.375rem); /* 18px – 22px */
+  --text-body-lg: 1.125rem;                            /* 18px */
+  --text-body: 1rem;                                    /* 16px */
+  --text-body-sm: 0.875rem;                             /* 14px */
+  --text-label: 0.75rem;                                /* 12px uppercase */
+
+  /* Line Heights */
+  --leading-none: 1;
+  --leading-tight: 1.1;
+  --leading-snug: 1.25;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.65;
+
+  /* Letter Spacing */
+  --tracking-tighter: -0.035em;
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0em;
+  --tracking-wide: 0.04em;
+  --tracking-wider: 0.08em;
+
+  /* Font Weights */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  /* ========================================================================
+     4. SPACING & LAYOUT SYSTEM (120–180px desktop, 90–120px tablet, 70–100px mobile)
+     ======================================================================== */
+  --space-2xs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 96px;
+  --space-5xl: 140px;       /* Standard major section rhythm desktop */
+
+  /* Section Spacing */
+  --section-space-desktop: 140px;
+  --section-space-tablet: 100px;
+  --section-space-mobile: 76px;
+
+  /* Layout Container */
+  --container-max-width: 1320px;
+  --container-pad-desktop: 48px;
+  --container-pad-tablet: 32px;
+  --container-pad-mobile: 20px;
+
+  /* ========================================================================
+     5. ELEVATIONS & SHADOWS (Ultra-subtle, ambient, low opacity)
+     ======================================================================== */
+  --shadow-subtle: 0 1px 3px rgba(17, 22, 19, 0.03);
+  --shadow-soft: 0 4px 18px rgba(17, 22, 19, 0.035);
+  --shadow-card: 0 8px 28px -6px rgba(17, 22, 19, 0.04), 0 1px 3px rgba(17, 22, 19, 0.02);
+  --shadow-card-hover: 0 16px 36px -8px rgba(17, 22, 19, 0.07), 0 2px 6px rgba(17, 22, 19, 0.02);
+  --shadow-floating: 0 14px 40px -10px rgba(17, 22, 19, 0.06);
+
+  /* ========================================================================
+     6. TRANSITIONS & TIMING (Apple-like smooth easing)
+     ======================================================================== */
+  --ease-out-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast: 200ms;
+  --duration-normal: 280ms;
+  --duration-slow: 450ms;
+  --duration-image: 650ms;
+
+  --transition-fast: all var(--duration-fast) var(--ease-out-smooth);
+  --transition-smooth: all var(--duration-normal) var(--ease-out-smooth);
+  --transition-slow: all var(--duration-slow) var(--ease-out-smooth);
+  --transition-image: transform var(--duration-image) var(--ease-out-smooth);
+
+  /* Z-index Hierarchy */
+  --z-base: 1;
+  --z-card: 10;
+  --z-sticky: 50;
+  --z-navbar: 100;
+  --z-overlay: 200;
+  --z-modal: 300;
+}
