@@ -64,7 +64,7 @@ export default function HomePage() {
     logo: "https://yogeshplastics.com/icon.svg",
     description:
       "Manufacturer of premium shade netting, shade cloth, and protective agro netting solutions for agriculture, horticulture, and architectural installations.",
-    slogan: "Shade, Designed for What Matters",
+    slogan: "Shade More. Protect Better.",
   };
 
   const faqSchema = {
@@ -115,11 +115,11 @@ export default function HomePage() {
         <div className={styles.heroContainer}>
           {/* Main Content: Typography & Action CTAs */}
           <div className={styles.heroContent}>
-            {/* Main Headline (Exact 2-Line Architectural Sans) */}
+            {/* Main Headline */}
             <h1 className={styles.heroTitle}>
-              Shade, Designed
+              Shade More.
               <br />
-              for What Matters.
+              Protect Better.
             </h1>
 
             {/* Supporting Paragraph */}
